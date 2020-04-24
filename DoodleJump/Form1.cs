@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace DoodleJump
 {
-    public partial class Form1 : Form
+    public partial class FrmMainScreen : Form
     {
-        public Form1()
+        public FrmMainScreen()
         {
             InitializeComponent();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)//login
+        {
+            FrmLogin login = new FrmLogin();
+            login.Show();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)//register
+        {
+            FrmRegister reg = new FrmRegister();
+            reg.Show();
         }
     }
 }
